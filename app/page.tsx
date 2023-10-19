@@ -49,7 +49,7 @@ export default function Home() {
           key: item[originalLocaleColumnNameOriginal],
           value: item[originalLocaleColumnNameTarget],
         }))
-        .sort((a, b) => b.key.length - a.key.length),
+        .sort((a, b) => b.key?.length - a.key?.length)
     }
 
     return result
